@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+
+.parallax {
+  
+  background-image: url(medipol-gece-modified.jpg);
+
+  
+  min-height: 700px;
+
+  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax2 {
+  
+  background-image: url(hobbies.jpg);
+
+  
+  min-height: 700px;
+
+  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax3 {
+  
+  background-image: url(neos.jpg);
+
+  
+  min-height: 700px;
+
+  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.bodycontainer {
+  background-image: url(placeholder.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+::selection {
+  color: red;
+  background: white;
+}
+
+/* NAVİGASYON */
+
+.topnav {
+  background-color: rgba(0, 0, 0, 1);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.centernav {
+  display: flex;
+}
+
+.topnav a {
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  color: white;
+}
+
+.topnav a:hover {
+  background-color: rgb(124, 0, 21);
+  color: white;
+  transition: 0.5s;
+}
+
+.topnav .rightnav {
+  position: absolute;
+  right: 0;
+  display: flex;
+}
+
+.active {
+  background-color: red;
+}
+
+/* DENEYİM */
+
+.maincontainer {
+  background-color: rgb(18, 6, 86);
+  box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.5);
+}
+
+
+.maincontainer p{
+ color: white;
+ font-family: 'Raleway', sans-serif;
+ }
+.maincontainer h1{
+  color: red;
+  text-align: center;
+}
+.maincontainer h2{
+  color: red;
+}
+.experience {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.anchor {
+  margin-top: 7rem;
+}
+.medipol {
+  width:fit-content;
+}
+.medipolicon img{
+  width: 80%;
+}
+
+/* hobbiler */
+.maincontainer2 {
+  background-color: #190606;
+  width: 100%;
+}
+
+.maincontainer2 p{
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+.maincontainer2 h1 {
+  color: rgb(196, 19, 19);
+  text-align: center;
+}
+
+.hobbies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.hobbyicon {
+  width: 20%;
+}
+.hobbyicon img {
+  width: 100%;
+}
+
+/* NEOS */
+
+.maincontainer3 {
+  background-color: #1f90a4;
+  width: 100%;
+}
+
+.maincontainer3 p{
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+.maincontainer3 h1 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.neos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.neosicon {
+  width: 15%;
+}
+.neosicon img {
+  width: 100%;
+}
+
+/* SOSYAL MEDYA */
+
+.icon-bar {
+  position: fixed;
+  top: 45%;
+}
+
+.icon-bar a {
+  display: block;
+  padding: 16px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.icon-bar a:hover {
+  background-color: red;
+  transition: 0.9s all;
+  transform: translate(20px) rotate(360deg);
+}
+
+.facebook {
+  background: black;
+  color: white;
+}
+
+.twitter {
+  background: gray;
+  color: white;
+}
+
+.github {
+  background: #000000;
+  color: white;
+}
+
+.linkedin {
+  background: gray;
+  color: white;
+}
+
+.steam {
+  background: black;
+  color: white;
+}
+.instagram {
+  background-color: gray;
+  color: white;
+}
+.medium {
+  background-color: #000000;
+  color: white;
+}
+
+/* RESPONSİVE */
+
+
+@media screen and (max-width: 1200px)
+{
+  .centernav {
+    flex-direction: column;
+
+}
+.centernav .rightnav {
+    flex-direction: column;
+    position: static;
+}
+.experience {
+  flex-direction: column;
+  text-align: center;
+}
+.medipolicon {
+  order: 1;
+}
+
+.hobbies {
+  flex-direction: column;
+  text-align: center;
+}
+
+.neos {
+  flex-direction: column;
+  text-align: center;
+}
+
+.medipolicon img {
+  width: 40%;
+}
+
+}
+@media screen and (max-width: 768px)
+{
+  .centernav {
+    flex-direction: column;
+
+}
+.centernav .rightnav {
+    flex-direction: column;
+    position: static;
+}
+.experience {
+  flex-direction: column;
+  text-align: center;
+}
+.medipolicon {
+  order: 1;
+}
+
+.hobbies {
+  flex-direction: column;
+  text-align: center;
+}
+
+.neos {
+  flex-direction: column;
+  text-align: center;
+}
+
+.medipolicon img {
+  width: 40%;
+}
+.icon-bar {
+  display: none;
+}
+}
+@media screen and (max-width: 480px)
+{
+  .centernav {
+    flex-direction: column;
+
+}
+.centernav .rightnav {
+    flex-direction: column;
+    position: static;
+}
+.experience {
+  flex-direction: column;
+  text-align: center;
+}
+.medipolicon {
+  order: 1;
+}
+
+.hobbies {
+  flex-direction: column;
+  text-align: center;
+}
+
+.neos {
+  flex-direction: column;
+  text-align: center;
+}
+
+.medipolicon img {
+  width: 40%;
+}
+
+.icon-bar {
+  display: none;
+}
+}

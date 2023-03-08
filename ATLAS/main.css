@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body{
+    background-image: url(placeholder.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+::selection {
+    color: red;
+    background: white;
+}
+
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 10rem;
+    color: white;
+  }
+  
+  .profiletext {
+    width: 40%;
+    text-align: center;
+  }
+  
+  .profileimage {
+    width: 20%;
+  }
+  
+  .profileimage img {
+    width: 100%;
+  }
+
+
+.topnav {
+    background-color: rgba(0, 0, 0, 0.7) ;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.centernav {
+    display: flex;
+   
+}
+
+.topnav a {
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    color:  white;
+    
+}
+
+.topnav a:hover {
+    background-color: rgb(124, 0, 21) ;
+    color:  white;
+    transition: 0.5s;
+}
+
+.topnav .rightnav {
+    position: absolute;
+    right: 0;
+    display: flex;
+}
+
+.active {
+    background-color: red;
+
+}
+
+
+.icon-bar {
+    position: fixed;
+    top: 45%;
+}
+
+.icon-bar a {
+    display: block;
+    padding: 16px;
+    border-radius: 20px;
+    transition: 0.5s;
+    
+}
+
+.icon-bar a:hover {
+    background-color: red;
+    transition: 0.9s all;
+    transform:translate(20px) rotate(360deg);  
+}   
+
+.facebook {
+  background: black;
+  color: white;
+}
+
+.twitter {
+  background: gray;
+  color: white;
+}
+
+.github {
+  background: #000000;
+  color: white;
+}
+
+.linkedin {
+  background: gray;
+  color: white;
+}
+
+.steam {
+  background: black;
+  color: white;
+}
+.instagram {
+    background-color:  gray;
+    color: white;
+}
+.medium {
+    background-color: #000000;
+    color: white;
+}
+
+@media screen and (max-width: 1200px)
+{
+    .profile {
+    width: 100%;
+    margin-top: 20rem;
+    }
+
+    .centernav {
+        flex-direction: column;
+
+    }
+    .centernav .rightnav {
+        flex-direction: column;
+        position: static;
+    }
+}
+@media screen and (max-width: 768px)
+{
+    body {
+        background-image: url(/placeholder2.jpg );
+        background-size: cover;
+    }
+    .centernav {
+        flex-direction: column;
+
+    }
+    .centernav .rightnav {
+        flex-direction: column;
+        position: static;
+    }
+
+    .profile {
+        flex-direction: column;
+        margin-top: 5rem;
+    }
+    .profiletext {
+        order: 2;
+        width: fit-content;
+    }
+    .icon-bar {
+        display: flex;    
+        top: 90%;
+        border-radius: 0px;
+    }
+
+    }
+@media screen and (max-width: 480px)
+{
+    .profile {
+        flex-direction: column;
+        margin-top: 5rem;
+    }
+    .profiletext {
+        order: 2;
+        font-size: large;
+        text-align: center;
+        width: fit-content;
+    }
+    .profileimage img {
+        width: 100%;
+    }
+    .centernav {
+        flex-direction: column;
+
+    }
+    .centernav .rightnav {
+        flex-direction: column;
+        position: static;
+    }
+}
